@@ -21,7 +21,7 @@ body {
 .article-meta {
   display: flex;
   align-items: center;
-  gap: 2vw;
+  gap: 1.13vw;
   width: 56.81vw;
 }
 
@@ -51,6 +51,7 @@ body {
 .article-date-2 {
     color: #595959;
   white-space: nowrap;
+  padding-right: 1.13vw;
 }
 
 .teg-article2 {
@@ -202,15 +203,10 @@ body {
   opacity: 1;
 }
 
-.zag-action-1:hover .zag-text {
-  transform: translateX(0);
-}
-
 .zag-text-wrap {
   display: inline-flex;
-  position: absolute;
-  right: calc(100% - 0.8vw); 
-  overflow: hidden;
+  position: static;
+  overflow: visible;
   white-space: nowrap;
 }
 
@@ -219,17 +215,12 @@ body {
   box-sizing: border-box;
   display: inline-block;
   padding: 0.25vw 1.7vw 0.25vw 0.7vw;
-  background: #FFFFFF;
-  border: 1px solid #2D2D2D;
-  border-radius: 2vw 0 0 2vw;
   font-family: var(--montserrat);
   font-size: 0.875vw;
   font-weight: 500;
   letter-spacing: -0.03em;
   line-height: 114.2%;
   color: #020202;
-  transform: translateX(100%);
-  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .zag-bl2-wrap {
@@ -753,6 +744,7 @@ body {
     align-items: center;
     width: 100%;
     gap: 3vw;
+    margin-top: 11.36vw;
   }
 
   /* аватар */
@@ -812,14 +804,14 @@ body {
 
   .zag-action-1 {
     margin-left: 0;
-    margin-top: 3vw;
+    margin-top: 5.23vw;
   }
 
   .zag-text {
     height: auto;
     border: none;
-    font-size: 3.5vw;
-    padding: 1.5vw 4vw 1.5vw 3vw;
+    font-size: 4.09vw;
+    padding: 1.5vw 4vw 1.5vw 0vw;
     border-radius: 8vw 0 0 8vw;
   }
 
@@ -860,6 +852,7 @@ body {
   .share-icon {
     width: 4.55vw;
     height: 4.55vw;
+    margin-left: 0.68vw;
   }
 
   .aabb-tegs {
@@ -904,7 +897,8 @@ body {
   }
 
  .article-zag-2 .zag-action-1 {
-  margin-left: 86.14vw;
+  display: flex;
+  margin-left: 60vw;
  }
 
   .g-art-content {
@@ -964,6 +958,7 @@ body {
     line-height: 159%;
     letter-spacing: 0em;
     width: 87.5vw;
+    margin-bottom: 7.27vw;
 }
 
 .article-citata {
@@ -974,8 +969,10 @@ body {
     width: 72vw;
     background-color: #F9F9F9;
     border-radius: 3.86vw;
-    padding: 1.2vw 3vw 1.2vw 1.5vw;
+    padding: 4.09vw 8.05vw 3.92vw 6.5vw;
     margin-left: 2.6vw;
+    margin-top: 7.27vw;
+    margin-bottom: 15.4vw;
 }
 
 .article-citata p {
