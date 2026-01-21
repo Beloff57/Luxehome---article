@@ -606,6 +606,22 @@ body {
 }
 
 
+.ac-line-b {
+  display: none;
+}
+
+.ac-art-line-b {
+  display: none;
+}
+
+.article-content-2 {
+  display: none;
+}
+
+.article-content-mob {
+  display: none;
+}
+
 
 @media (max-width: 440px) {
 
@@ -630,7 +646,6 @@ body {
 
   .article-meta {
     width: 100%;
-    flex-wrap: wrap;
     gap: 3vw;
   }
 
@@ -639,7 +654,7 @@ body {
     width: 10vw;
         font-size: 3.18vw;
         border: 0.06vw solid #000000;
-        padding: 0.4vw 2vw;
+        padding: 1.25vw 2.5vw;
         border-radius: 5.34vw;
         color: #020202;
         margin-left: 0vw;
@@ -885,6 +900,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 2vw;
+    padding-right: 5.23vw;
   }
 
   .article-zag-2 h1 {
@@ -893,12 +909,12 @@ body {
     margin: 0;
     font-weight: 400;
     font-size: 10.91vw;
-    padding-left: 5vw;
+    padding-left: 6.23vw;
   }
 
  .article-zag-2 .zag-action-1 {
   display: flex;
-  margin-left: 60vw;
+  justify-content: flex-end;
  }
 
   .g-art-content {
@@ -970,7 +986,7 @@ body {
     background-color: #F9F9F9;
     border-radius: 3.86vw;
     padding: 4.09vw 8.05vw 3.92vw 6.5vw;
-    margin-left: 2.6vw;
+    margin-left: 0.91vw;
     margin-top: 7.27vw;
     margin-bottom: 15.4vw;
 }
@@ -997,5 +1013,287 @@ body {
     margin-top: 2.27vw;
     margin-bottom: 3.86vw;
 }
+
+
+  /* ===============================
+   MOBILE — линии
+   =============================== */
+
+/* ❌ вертикальные — скрываем */
+.ac-vertical-line-1,
+.ac-vertical-line-2,
+.ac-vertical-line-s1,
+.ac-vertical-line-s2 {
+  display: none;
+}
+
+/* ✅ горизонтальные — возвращаем */
+.ac-line-1,
+.ac-art-line,
+.ac-art-line-2 {
+  display: block;
+  width: 100%;
+  margin: 0vw;
+}
+
+.ac-line-b {
+  display: block;
+    margin-top: 4.61vw;
+    margin-bottom: 4.77vw;
+    width: 100%;
+    height: 1px;
+    background-color: #3E3E3E;
+    position: relative;
+    overflow: hidden;
+}
+
+.ac-h-grow{
+  position: absolute;
+  top: 0;
+  height: 1px;
+  background-color: #E7E7E7;
+  width: 0%;
+  transition: width 0.35s cubic-bezier(.22,.61,.36,1);
+}
+.ac-h-grow.left{ 
+  left: 0; 
+}
+.ac-h-grow.right{ 
+  right: 0; 
+}
+
+
+  /* ==================================
+     Маленькие карточки
+     ================================== */
+
+  .g-art-content {
+    display: none;
+  }
+
+  .article-content-mob {
+    display: block;
+    flex-direction: column;
+    height: auto;
+    gap: 4.55vw;
+    margin-top: 4.55vw;
+  }
+
+  .article-st1 {
+    height: 35vw;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    position: relative;
+    padding-bottom: 4.55vw;
+    padding-left: 5vw;
+        padding-right: 4.55vw;
+        margin-bottom: 4.55vw;
+  }
+
+  .article-st1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #E5E5E5;
+  }
+
+  /* большая карточка */
+  .article-st2 {
+    position: relative;
+    padding-bottom: 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    padding-left: 5vw;
+  }
+
+
+
+
+
+  .article-st2 .article-text {
+    display: contents;
+  }
+
+  .article-meta-bc {
+  display: flex;
+  align-items: center;
+  gap: 1.13vw;
+  width: 56.81vw;
+}
+
+.article-meta-info-bc {
+  display: flex;
+  align-items: center;
+  font-size: 0.88vw;
+  color: #D8D8D8;
+  font-weight: 400;
+}
+
+
+  /* ===== порядок элементов ===== */
+
+  /* 1. мета */
+  .article-st2 .article-meta-bc {
+    order: 1;
+    margin-bottom: 2.95vw;
+  }
+
+  /* 2. картинка */
+  .article-st2 .article-foto {
+    order: 2;
+  }
+
+  /* 3. заголовок */
+  .article-st2 .article-zag-3 {
+    order: 3;
+    font-weight: 600;
+    font-size: 3.64vw;
+    width: 91%;
+    margin: 4.09vw 0;
+  }
+
+  /* 4. описание */
+  .article-st2 .article-opis-3 {
+    order: 4;
+    font-size: 2.73vw;
+    width: 93%;
+    line-height: 150%;
+  }
+
+  /* картинка */
+  .article-st2 .ac-st2 {
+    width: 89.73vw;
+        height: 42.27vw;
+        display: block;
+        object-fit: cover;
+  }
+
+  .article-st2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #E5E5E5;
+  }
+
+  /* последняя карточка — без линии */
+  .article-st1:last-child::after,
+  .article-st2:last-child::after {
+    display: none;
+  }
+
+  /* 🔁 ШАХМАТКА (исправлено) */
+.article-st1:nth-of-type(odd) {
+  flex-direction: row;          /* картинка СЛЕВА */
+}
+
+.article-st1:nth-of-type(even) {
+  flex-direction: row-reverse;  /* картинка СПРАВА */
+}
+
+
+  .article-text {
+    width: 100%;
+    gap: 2vw;
+    display: flex;
+        flex-direction: column;
+  }
+
+  .article-meta-bc {
+    gap: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  .teg-article-bc {
+    display: flex;
+    width: 8.3vw;
+    border: 0.06vw solid #000000;
+    font-size: 2.6vw;
+    padding: 0.91vw 1.65vw;
+    border-radius: 6vw;
+    line-height: 114.2%;
+  }
+
+  .article-meta-info-bc {
+    font-size: 2.73vw;
+  }
+
+  .views-icon,
+.views-icon-2 {
+    width: 2.1vw;
+    height: 2vw;
+    padding-right: 0.81vw;
+}
+
+.article-views {
+  display: flex;
+  align-items: center;
+  gap: 0.35vw;
+  padding-right: 2.82vw;
+}
+
+.article-views-2 {
+    color: #595959;
+  display: flex;
+  align-items: center;
+  gap: 0.35vw;
+  padding-right: 2.82vw;
+}
+
+  .article-zag-4 {
+    font-family: var(--montserrat);
+    font-size: 3.64vw;
+    width: 100%;
+    margin: 0 0 2.5vw;
+    font-weight: 600;
+  }
+
+  .article-opis-4 {
+    font-size: 2.73vw;
+    width: 97%;
+    line-height: 145%;
+    margin-bottom: 0;
+  }
+
+  .ac-st1 {
+    width: 34.55vw;
+    height: 35vw;
+    object-fit: cover;
+  }
+
+  /* ==================================
+     Большая карточка
+     ================================== */
+
+  .article-content-2 {
+    display: block;
+    flex-direction: column;
+    margin-top: 4.77vw;
+  }
+
+  .article-st2 {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .article-zag-3 {
+    font-size: 3.64vw;
+    width: 100%;
+    margin-bottom: 3vw;
+  }
+
+  .article-opis-3 {
+    font-size: 3.7vw;
+    width: 100%;
+    line-height: 150%;
+    margin: 0;
+  }
 
 }
