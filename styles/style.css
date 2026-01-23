@@ -874,14 +874,15 @@ body {
   .aabb-tegs {
     order: 1;
     font-size: 3.5vw;
-    gap: 4vw;
+    gap: 1.37vw;
     flex-wrap: wrap;
   }
 
   .aabb-tegs span {
+    color: #000000;
     border: 0.23vw solid #000000;
         border-radius: 5.34vw;
-        padding: 1vw 3vw;
+        padding: 1vw 2.6vw;
     order: 1;
     font-size: 2.95vw;
     gap: 4vw;
