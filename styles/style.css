@@ -307,15 +307,15 @@ body {
 
 /* Маски */
 .like-icon {
-  -webkit-mask-image: url("/images/like-icon.svg");
-          mask-image: url("/images/like-icon.svg");
+  -webkit-mask-image: url("../images/like-icon.svg");
+          mask-image: url("../images/like-icon.svg");
 }
 
 .share-icon {
     width: 1.25vw;
     height: 1.25vw;
-  -webkit-mask-image: url("/images/share-icon.svg");
-          mask-image: url("/images/share-icon.svg");
+  -webkit-mask-image: url("../images/share-icon.svg");
+          mask-image: url("../images/share-icon.svg");
 }
 
 /* Hover */
